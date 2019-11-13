@@ -9,9 +9,9 @@
 <body>
     <h1>Developer Skills</h1>
     <ul>
-      <% skills.forEach(function(t) { %>
+      <% skills.forEach(function(t, idx) { %>
         <li>
-          <%= t.skill %>
+          <a href="/skills/<%= idx %>"><%= t.skill %></a>
             - 
           <%= t.proficient ? 'acquired' : 'not acquired' %>
         </li>
